@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/carousel.js" defer></script>
+
+    <title>SP-massaje</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/fav-icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/fav-icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/fav-icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/fav-icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/fav-icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/fav-icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/fav-icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/fav-icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/fav-icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/fav-icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fav-icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/fav-icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fav-icon/favicon-16x16.png">
+    <link rel="manifest" href="img/fav-icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/fav-icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="header__logo">
+            <img src="./img/header/logo.svg" alt="LOGO">
+            <span>SP-massaje</span>
+        </a>
+        <form id="search" class="header__search">
+            <input type="text" name="search-input" id="search-input">
+            <label for="search-submit">
+                <input type="submit" name="search-submit" id="search-submit">
+            </label>
+        </form>
+        <div class="header__buttons">
+            <a href="./pages/infocity.html" class="header__button">
+                <img src="./img/header/bell.svg" alt="ICON">
+            </a>
+            <a href="./pages/cart.html" class="header__button">
+                <img src="./img/header/cart.svg" alt="ICON">
+            </a>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="main__carousel carousel carousel_1">
+            <div class="carousel__arrows">
+                <button class="carousel__arrow">
+                    <img src="./img/carousel/arrow.svg" alt="ARROW">
+                </button>
+                <button class="carousel__arrow carousel__arrow_reverse">
+                    <img src="./img/carousel/arrow.svg" alt="ARROW">
+                </button>
+            </div>
+            <div class="carousel__circles">
+                <div class="carousel__circle carousel__circle_active"></div>
+                <div class="carousel__circle"></div>
+                <div class="carousel__circle"></div>
+                <div class="carousel__circle"></div>
+                <div class="carousel__circle"></div>
+                <div class="carousel__circle"></div>
+            </div>
+            <h1 class="carousel__title">“СПА-массаж расслабляет..~”</h1>
+        </section>
+
+        <section class="main__pricelist pricelist">
+            <div class="container">
+                <div class="pricelist__book">
+                    <button class="book-button">Забронировать</button>
+                    <p>Принимаем до 23:00</p>
+                    <p>Уже сегодня!</p>
+                </div>
+                <h1>Выбор массажа каждого клиента</h1>
+                <div class="pricelist__entries">
+                    <div class="pricelist__entry">
+                        <div class="pricelist__entry-left">
+                            <div class="pricelist__entry-top">
+                                <h2>Классический общий массаж</h2>
+                                <p>Цена: 7500₽</p>
+                                <button class="book-button book-button_small">Забронировать</button>
+                            </div>
+                            <p class="pricelist__entry-desc">
+                                Классическая техника воздействия на мышцы помогает снять накопленное напряжение,
+                                улучшить кровообращение и нормализовать сон.
+                            </p>
+                        </div>
+                        <div class="pricelist__entry-right">
+                            <img src="./img/pricelist/1.png" alt="IMG">
+                        </div>
+                    </div>
+                    <div class="pricelist__entry">
+                        <div class="pricelist__entry-left">
+                            <div class="pricelist__entry-top">
+                                <h2>Расслабляю-щий массаж</h2>
+                                <p>Цена: 7500₽</p>
+                                <button class="book-button book-button_small">Забронировать</button>
+                            </div>
+                            <p class="pricelist__entry-desc">
+                                Забудьте о городской суете и бесконечных списках дел. Этот массаж направлен на глубокую
+                                релаксацию нервной системы через мягкие, плавные движения и использование натуральных
+                                ароматических масел.
+                            </p>
+                        </div>
+                        <div class="pricelist__entry-right">
+                            <img src="./img/pricelist/2.png" alt="IMG">
+                        </div>
+                    </div>
+                    <div class="pricelist__entry pricelist__entry_reverse">
+                        <div class="pricelist__entry-left">
+                            <div class="pricelist__entry-top">
+                                <h2>Спортивный массаж</h2>
+                                <p>Цена: 7500₽</p>
+                                <button class="book-button book-button_small">Забронировать</button>
+                            </div>
+                            <p class="pricelist__entry-desc">
+                                Интенсивная проработка мышечного корсета для тех, кто ведет активный образ жизни. Мы
+                                фокусируемся на глубоких слоях тканей, устранении триггерных точек и подготовке мышц к
+                                нагрузкам или их восстановлению после тренировок.
+                            </p>
+                        </div>
+                        <div class="pricelist__entry-right">
+                            <img src="./img/pricelist/3.png" alt="IMG">
+                        </div>
+                    </div>
+                    <div class="pricelist__entry pricelist__entry_reverse">
+                        <div class="pricelist__entry-left">
+                            <div class="pricelist__entry-top">
+                                <h2>Лимфодренаж-ный массаж</h2>
+                                <p>Цена: 7500₽</p>
+                                <button class="book-button book-button_small">Забронировать</button>
+                            </div>
+                            <p class="pricelist__entry-desc">
+                                Скульптурирующий уход, направленный на активацию обменных процессов и вывод лишней
+                                жидкости из организма. Специальная техника ускоряет лимфоток, что способствует
+                                детоксикации, уменьшению отечности и улучшению контуров тела.
+                            </p>
+                        </div>
+                        <div class="pricelist__entry-right">
+                            <img src="./img/pricelist/4.png" alt="IMG">
+                        </div>
+                    </div>
+                    <div class="pricelist__large-entry">
+                        <div class="pricelist__large-entry-images">
+                            <img src="./img/pricelist/l-1.png" alt="IMG">
+                            <img src="./img/pricelist/l-2.png" alt="IMG">
+                            <img src="./img/pricelist/l-3.png" alt="IMG">
+                        </div>
+                        <div class="pricelist__large-entry-right">
+                            <p class="pricelist__large-entry-desc">
+                                Выходя из нашего кабинета, вы почувствуете, будто с плеч сняли невидимый груз, который
+                                вы носили годами. Мы создали пространство, где гравитация словно перестает действовать:
+                                походка становится летящей, движения — свободными, а мысли — кристально ясными. Это не
+                                просто физическое расслабление, это полная перезагрузка системы.
+                            </p>
+                            <div class="pricelist__large-entry-bottom">
+                                <p>Любой вид массажа от 7500₽</p>
+                                <button class="book-button book-button_small">Забронировать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__bottom bottom"></section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>ООО «Blizko»</p>
+            <div class="footer__right">
+                <a href="#">
+                    <img src="./img/footer/tiktok.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./img/footer/discord.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./img/footer/telegram.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./img/footer/whatsapp.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
